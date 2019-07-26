@@ -28,3 +28,6 @@ NumbersArr[min] = n;
 
 console.log (max, NumbersArr[max]);
 console.log (min, NumbersArr[min]);
+
+
+// Бляяяя. Это надо переделать11!
