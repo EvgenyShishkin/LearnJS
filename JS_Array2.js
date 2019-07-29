@@ -1,6 +1,6 @@
-// function log(element) {
-//   console.log("Элемент -", element);
-// }
+function log(element) {
+  console.log("Элемент -", element);
+}
 
 // function forEach(nums, func) {
 //   for (let i = 0; i < nums.length; i++) {
@@ -8,7 +8,7 @@
 //   }
 // }
 
-// forEach([1,2,3], log);
+// 
 
 // Функция, которая принимает массив элементов и другую функцию. 
 // Берем массив, фильтруем и возвращаем в новый массив элемент массива с теми элементами, которые прошли проверку
@@ -24,14 +24,21 @@ for (let i = 0; i < 10; i++) {
   NumbersArr.push(getRandomInt());
 }
 
-function FilterMTF (nums, func) {
-  for (let i; i < nums.length; i++){
-    func(nums[i])
+function filter (arr, func) {
+  let tempArr =[];
+  for (let i = 0;i<arr.length;i++) {
+    if (func(arr[i]) ) {
+      tempArr.push (arr[i]);
+    }
+  
   }
+  return tempArr;
 }
+function more (item) {
+  return item>=5 && item <=7 ;
+}
+console.log (NumbersArr)
+console.log (filter(NumbersArr, more ))
 
-function MoreThenFive (num) {
-  if (i < num) {
-    return i;
-  }
-}
+
+
